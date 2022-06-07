@@ -52,7 +52,7 @@
                                             <input type="text " placeholder="Ваш логин " />
                                             <div></div>             
                                     </label>
-                                    <label class="footer__email__input__container "> <input type="text " placeholder="Сумма"/>
+                                    <label class="footer__email__input__container "> <input type="number " placeholder="Сумма"/>
                                         <div></div>
                                     </label>
                                 </div>
@@ -109,16 +109,31 @@
 
                             <div id="card" class="payment__container">
                                 <div class="wrapper__payment-card">
-                                    <input type="radio" name="method" value="enot-card" required>
-                                    <img src="./images/icons/card.png" alt="card">
+                                    <p>Карта</p>
+                                    <input type="radio" name="method" id="1" class="hidebx" value="enot-card" required>
+                                    <label for="1" class="lbl-radio">
+                                        <div class="display-box">
+                                            <div><img src="./images/icons/card.png" alt="card">
+                                                </div>
+                                        </div>
+                                    </label>
                                 </div>
                             </div>
                             <div id="card" class="payment__container">
                                 <div class="wrapper__payment-card">
-                                    <input type="radio" name="method" value="enot-card" required>
-                                    <img src="" alt="">
+                                    <p>QIWI</p>
+                                    <input type="radio" name="method" id="2" class="hidebx" value="enot-qiwi" required>
+                                    <label for="1" class="lbl-radio">
+                                        <div class="display-box">
+                                            <div><img src="./images/icons/QIWI.png" alt="card">
+                                                
+                                            </div>
+                                        </div>
+                                    </label>
                                 </div>
                             </div>
+
+
 
 
 

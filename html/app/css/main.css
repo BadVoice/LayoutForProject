@@ -196,6 +196,8 @@ label.footer__email__input__container::after {
 .footer__forms__btn button {
     height: 50px;
     min-width: 170px;
+    background: rgb(155, 92, 231);
+    background: radial-gradient(circle, rgba(155, 92, 231, 1) 0%, rgba(108, 92, 231, 1) 100%);
 }
 
 .footer__forms__btn label>div {

@@ -24,7 +24,8 @@
 .primary__btn__corner:hover,
 .primary__btn:focus,
 .primary__btn__corner:focus {
-    background: var(--color-purple-light);
+    background: rgb(196, 107, 255);
+    background: radial-gradient(circle, rgba(196, 107, 255, 1) 0%, rgba(132, 116, 255, 1) 100%);
     transition: background var(--animation);
 }
 
