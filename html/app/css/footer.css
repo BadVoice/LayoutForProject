@@ -1,7 +1,20 @@
 .wrapper__forms {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    width: 50%;
+    margin-right: 50px;
+}
+
+.wrapper__footer {
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+}
+
+.wrapper__payment {
+    width: 50%;
+    height: 200px;
+    background-color: black;
 }
 
 .footer__forms__feedback {
@@ -66,6 +79,7 @@
 
 .footer__forms__title {
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .footer__forms__email {
@@ -100,15 +114,6 @@
     height: 24px;
 } */
 
-.social__media a {
-    outline: none;
-    text-decoration: none;
-}
-
-.social__media a:focus img {
-    background-color: var(--color-yellow-light);
-}
-
 .social__inf__link span {
     color: var(--color-black);
     font-size: 14px;
@@ -140,13 +145,8 @@ footer>.container {
     flex-direction: column
 }
 
-.feedback__forms__textarea textarea {
-    height: 80px;
-    width: 100%;
-}
-
 .footer__forms__input input {
-    width: 270px;
+    width: 90%;
     height: 48px;
     background: transparent;
     outline: none;
@@ -190,24 +190,18 @@ footer>.container {
     top: 4px;
 }
 
+label.footer__email__input__container::after {
+    width: 30px;
+    margin: 5px 3px 0 0
+}
+
 .footer__forms__input label:hover>div {
     opacity: 0.45;
 }
 
 .footer__forms__btn button {
-    min-height: 60px;
+    height: 50px;
     min-width: 170px;
-}
-
-.footer__forms__btn {
-    height: 80px;
-    width: 100%;
-}
-
-.footer__forms__btn textarea::placeholder {
-    font-size: 18px;
-    font-family: var(--font-family-b-700);
-    color: var(--color-purple-dark);
 }
 
 .footer__forms__btn label>div {
@@ -221,10 +215,6 @@ footer>.container {
     opacity: 0.24;
     border-radius: 16px;
     transition: opacity var(--animation);
-}
-
-.feedback__textarea__container>div {
-    border: 2px solid var(--color-purple-dark);
 }
 
 .footer__forms__btn label {
@@ -247,7 +237,7 @@ footer>.container {
 }
 
 .footer__email__input__container::after {
-    background: url('../images/icons/icon-user.svg') no-repeat;
+    background: url('../images/icons/wallet_25.png') no-repeat;
 }
 
 .feedback__textarea__container::after {
@@ -271,4 +261,82 @@ footer>.container {
     color: var(--color-purple-dark);
     font-size: 18px;
     font-family: var(--font-family-b-700);
+}
+
+.footer__forms__btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__forms__wallet div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer__forms__wallet button {
+    width: 90%;
+    height: 50px;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.footer__forms__wallet button:last-child {
+    margin-right: 0px;
+}
+
+.footer__forms_question {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer__forms_question img {
+    margin-right: 10px;
+    width: 35px;
+}
+
+.footer__forms_question a {
+    outline: none;
+    text-decoration: none;
+    color: var(--color-purple-light);
+    font-size: 14px;
+    font-family: var(--font-family-b-700);
+}
+
+.footer__forms_question a:hover {
+    color: var(--color-purple-dark);
+}
+
+.footer__forms_question a:focus {
+    color: var(--color-purple-dark);
+}
+
+.forms__confirm__container a>img {
+    background: transparent;
+}
+
+.forms__confirm__container img:hover {
+    border-radius: 999px;
+    background: var(--color-yellow-dark);
+}
+
+.forms__confirm__container a:focus img {
+    border-radius: 999px;
+    background: var(--color-green-dark);
+}
+
+.forms__confirm__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: var(--color-purple-light);
+    font-size: 14px;
+    font-family: var(--font-family-b-700);
+}
+
+.forms__confirm__container img {
+    margin-right: 20px;
 }

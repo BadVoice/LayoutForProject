@@ -2,7 +2,7 @@
 .primary__btn,
 .primary__btn__corner {
     border-radius: 16px;
-    font-size: 24px;
+    font-size: 18px;
     font-family: var(--font-family-b-700);
     cursor: pointer;
     outline: none;
