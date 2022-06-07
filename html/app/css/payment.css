@@ -1,0 +1,28 @@
+.wrapper__payment {
+    width: 50%;
+    height: 350px;
+    background-color: var(--color-gray-24);
+    border-radius: 20px;
+    opacity: 0.3;
+}
+
+.wrapper__payment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    height: 100%;
+}
+
+.payment__container {
+    background-color: var(--color-gray-64);
+    border-radius: 20px;
+}
+
+.wrapper__payment-card {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
