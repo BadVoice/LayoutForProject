@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin-right: 50px;
+    margin-right: 170px;
 }
 
 .wrapper__footer {
@@ -321,4 +321,9 @@ label.footer__email__input__container::after {
 
 .forms__confirm__container img {
     margin-right: 20px;
+}
+
+.wrapper__container {
+    width: 60%;
+    margin: 0 auto;
 }

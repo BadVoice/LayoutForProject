@@ -1,7 +1,7 @@
 .wrapper__payment {
-    margin-top: 80px;
-    width: 50%;
-    height: 200px;
+    margin-top: 143px;
+    width: 432px;
+    height: 160px;
     /* background-color: var(--color-gray-24); */
     border-radius: 20px;
     background: radial-gradient(circle, rgba(155, 92, 231, 1) 0%, rgba(108, 92, 231, 1) 100%);
@@ -11,10 +11,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    gap: 20px;
-    padding: 20px;
+    gap: 40px;
+    padding: 20px 40px;
     height: 100%;
-    width: 50%;
+    width: 100%;
 }
 
 .payment__container {
