@@ -1,6 +1,47 @@
-.default__btn,
-.primary__btn,
-.primary__btn__corner {
+.wrapper__btn {
+    border-radius: 16px;
+    font-size: 18px;
+    font-family: var(--font-family-b-700);
+    cursor: pointer;
+    outline: none;
+    background: var(--color-purple-dark);
+    color: var(--color-white);
+    border: none;
+    text-align: center;
+    transition: background var(--animation);
+    transition: color var(--animation), border-color var(--animation);
+}
+
+.wrapper__btn:hover,
+.wrapper__btn:focus,
+.wrapper__btn:focus {
+    transition: background var(--animation);
+    background: var(--color-purple-light);
+}
+
+.primary__btn {
+    border-radius: 16px;
+    font-size: 18px;
+    font-family: var(--font-family-b-700);
+    cursor: pointer;
+    outline: none;
+    background: radial-gradient(circle, rgba(196, 107, 255, 1) 0%, rgba(132, 116, 255, 1) 100%);
+    color: var(--color-white);
+    border: none;
+    text-align: center;
+    transition: background var(--animation);
+    transition: color var(--animation), border-color var(--animation);
+}
+
+.primary__btn:hover,
+.primary__btn:focus,
+.primary__btn:focus {
+    transition: background var(--animation);
+    background: radial-gradient(circle, rgba(196, 107, 255, 1) 0%, rgba(132, 116, 255, 1) 100%);
+}
+
+
+/* .wrapper__btn {
     border-radius: 16px;
     font-size: 18px;
     font-family: var(--font-family-b-700);
@@ -8,26 +49,27 @@
     outline: none;
 }
 
-.primary__btn,
-.primary__btn__corner {
+.wrapper__btn {
     background: var(--color-purple-dark);
     color: var(--color-white);
     border: none;
     text-align: center;
 }
 
-.primary__btn__corner {
+.wrapper__btn {
     border-radius: 999px;
 }
 
-.primary__btn:hover,
-.primary__btn__corner:hover,
-.primary__btn:focus,
-.primary__btn__corner:focus {
+.wrapper__btn:hover,
+.wrapper__btn:hover,
+.wrapper__btn:focus,
+.wrapper__btn:focus 
     background: rgb(196, 107, 255);
     background: radial-gradient(circle, rgba(196, 107, 255, 1) 0%, rgba(132, 116, 255, 1) 100%);
     transition: background var(--animation);
-}
+} 
+
+
 
 .default__btn {
     border-radius: 16px;
@@ -54,6 +96,7 @@
     color: var(--color-white);
     border: 1px solid var(--color-purple-dark);
     transition: color var(--animation), border-color var(--animation);
+    transition: background var(--animation);
 }
 
 .--dark:hover {
@@ -61,4 +104,4 @@
     color: var(--color-white);
     border: 1px solid var(--color-purple-light);
     transition: background var(--animation);
-}
+} */

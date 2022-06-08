@@ -5,7 +5,7 @@
     margin-right: 170px;
 }
 
-.wrapper__footer {
+.wrapper__flex {
     width: 100%;
     display: flex;
     margin-top: 100px;
@@ -56,9 +56,9 @@
 }
 
 .social__title__inf,
-.footer__title__feedback,
-.footer__forms__title,
-.footer__forms__secondtitle {
+.wrapper__title__feedback,
+.wrapper__forms__title,
+.wrapper__forms__secondtitle {
     font-size: 12px;
     color: var(--color-gray-32);
     font-family: var(--font-family-b-800);
@@ -67,17 +67,17 @@
     margin-bottom: 16px;
 }
 
-.footer__forms__secondtitle {
+.wrapper__forms__secondtitle {
     margin-top: 20px;
 }
 
-.footer__forms__title {
+.wrapper__forms__title {
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
-.footer__forms__email {
-    font-size: 32px;
+.wrapper__forms__title {
+    font-size: 44px;
     color: var(--color-purple-dark);
     font-family: var(--font-family-b-700);
     letter-spacing: -0.5px;
@@ -134,12 +134,12 @@ footer>.container {
     justify-content: space-between;
 }
 
-.footer__forms__fields div {
+.wrapper__forms__fields div {
     display: flex;
     flex-direction: column
 }
 
-.footer__forms__input input {
+.wrapper__forms__input input {
     width: 90%;
     height: 48px;
     background: transparent;
@@ -150,13 +150,13 @@ footer>.container {
     padding-right: 40px;
 }
 
-.footer__forms__input input::placeholder {
+.wrapper__forms__input input::placeholder {
     font-size: 18px;
     font-family: var(--font-family-r);
     color: var(--color-black);
 }
 
-.footer__forms__input label>div {
+.wrapper__forms__input label>div {
     background: var(--color-gray-24);
     width: 100%;
     height: 100%;
@@ -169,12 +169,12 @@ footer>.container {
     transition: opacity var(--animation);
 }
 
-.footer__forms__input label {
+.wrapper__forms__input label {
     position: relative;
     margin-bottom: 30px;
 }
 
-.footer__forms__input label::after {
+.wrapper__forms__input label::after {
     content: '';
     display: block;
     width: 40px;
@@ -184,23 +184,23 @@ footer>.container {
     top: 4px;
 }
 
-label.footer__email__input__container::after {
+label.wrapper__email__input__container::after {
     width: 30px;
     margin: 5px 3px 0 0
 }
 
-.footer__forms__input label:hover>div {
+.wrapper__forms__input label:hover>div {
     opacity: 0.45;
 }
 
-.footer__forms__btn button {
+.wrapper__forms__btn button {
     height: 50px;
     min-width: 170px;
     background: rgb(155, 92, 231);
     background: radial-gradient(circle, rgba(155, 92, 231, 1) 0%, rgba(108, 92, 231, 1) 100%);
 }
 
-.footer__forms__btn label>div {
+.wrapper__forms__btn label>div {
     background: var(--color-gray-24);
     width: 100%;
     height: 100%;
@@ -213,12 +213,12 @@ label.footer__email__input__container::after {
     transition: opacity var(--animation);
 }
 
-.footer__forms__btn label {
+.wrapper__forms__btn label {
     position: relative;
     margin-right: 30px;
 }
 
-.footer__forms__btn label::after {
+.wrapper__forms__btn label::after {
     content: '';
     display: block;
     width: 40px;
@@ -228,11 +228,11 @@ label.footer__email__input__container::after {
     top: 4px;
 }
 
-.footer__name__input__container::after {
+.wrapper__name__input__container::after {
     background: url('../images/icons/icon-user.svg') no-repeat;
 }
 
-.footer__email__input__container::after {
+.wrapper__email__input__container::after {
     background: url('../images/icons/wallet_25.png') no-repeat;
 }
 
@@ -240,11 +240,11 @@ label.footer__email__input__container::after {
     background: url('../images/icons/icon-edit.svg') no-repeat;
 }
 
-.footer__forms__btn label:hover>div {
+.wrapper__forms__btn label:hover>div {
     opacity: 0.45;
 }
 
-.footer__forms__btn textarea {
+.wrapper__forms__btn textarea {
     width: 370px;
     height: 80px;
     resize: none;
@@ -259,42 +259,42 @@ label.footer__email__input__container::after {
     font-family: var(--font-family-b-700);
 }
 
-.footer__forms__btn {
+.wrapper__forms__btn {
     display: flex;
     flex-direction: column;
 }
 
-.footer__forms__wallet div {
+.wrapper__forms__wallet div {
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
-.footer__forms__wallet button {
+.wrapper__forms__wallet button {
     width: 90%;
     height: 50px;
     justify-content: space-between;
     margin-right: 10px;
 }
 
-.footer__forms__wallet button:last-child {
+.wrapper__forms__wallet button:last-child {
     margin-right: 0px;
 }
 
-.footer__forms_question {
+.wrapper__forms_question {
     display: flex;
     text-align: center;
     align-items: center;
     margin-top: 20px;
 }
 
-.footer__forms_question img {
+.wrapper__forms_question img {
     margin-right: 10px;
     width: 35px;
 }
 
-.footer__forms_question a {
+.wrapper__forms_question a {
     outline: none;
     text-decoration: none;
     color: var(--color-purple-light);
@@ -302,11 +302,11 @@ label.footer__email__input__container::after {
     font-family: var(--font-family-b-700);
 }
 
-.footer__forms_question a:hover {
+.wrapper__forms_question a:hover {
     color: var(--color-purple-dark);
 }
 
-.footer__forms_question a:focus {
+.wrapper__forms_question a:focus {
     color: var(--color-purple-dark);
 }
 

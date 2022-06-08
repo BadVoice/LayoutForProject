@@ -5,6 +5,7 @@
 @import url('../css/button.css');
 @import url('../css/payment.css');
 @import url('../css/footer.css');
+@import url('../css/calc.css');
 :root {
     --color-white: #fff;
     --color-black: #2D3436;
