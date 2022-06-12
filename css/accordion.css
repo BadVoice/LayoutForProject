@@ -1,110 +1,110 @@
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-}
-
-.accordion {
-    background: #21212c;
-    border-radius: 12px;
-    color: #bbc4d2;
-    margin-bottom: 16px;
-    overflow: hidden;
-}
-
-.accordion__control {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    padding: 20px;
-}
-
-.accordion__control::before {
-    background-color: #888;
-}
-
-.accordion__control::-webkit-details-marker {
-    display: none;
-}
-
-.accordion__title {
-    margin: 0;
-}
-
-.accordion__icon {
-    position: relative;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    color: #8787a2;
-}
-
-.accordion__icon::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 50%;
-    height: 1px;
-    background-color: #000;
-    transform: translate(-50%, -50%);
-}
-
-.accordion__icon::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 1px;
-    height: 50%;
-    background-color: #000;
-    transform: translate(-50%, -50%);
-}
-
-.accordion[open] .accordion__icon {
-    transform: rotate(45deg);
-}
-
-.accordion__icon {
-    display: inline-block;
-    position: relative;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-}
-
-.accordion__icon::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    height: 1px;
-    background: #8787a2;
-}
-
-.accordion__icon::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 1px;
-    height: 50%;
-    background: #8787a2;
-}
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    .visually-hidden {
+        position: absolute !important;
+        clip: rect(1px 1px 1px 1px);
+        /* IE6, IE7 */
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0 !important;
+        border: 0 !important;
+        height: 1px !important;
+        width: 1px !important;
+        overflow: hidden;
+    }
+    
+    .accordion {
+        background: #21212c;
+        border-radius: 12px;
+        color: #bbc4d2;
+        margin-bottom: 16px;
+        overflow: hidden;
+    }
+    
+    .accordion__control {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        padding: 20px;
+    }
+    
+    .accordion__control::before {
+        background-color: #888;
+    }
+    
+    .accordion__control::-webkit-details-marker {
+        display: none;
+    }
+    
+    .accordion__title {
+        margin: 0;
+    }
+    
+    .accordion__icon {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        color: #ffffff;
+    }
+    
+    .accordion__icon::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 50%;
+        height: 1px;
+        background-color: var(--color-white);
+        transform: translate(-50%, -50%);
+    }
+    
+    .accordion__icon::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 1px;
+        height: 50%;
+        background-color: var(--color-white);
+        transform: translate(-50%, -50%);
+    }
+    
+    .accordion[open] .accordion__icon {
+        transform: rotate(45deg);
+    }
+    
+    .accordion__icon {
+        display: inline-block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+    }
+    
+    .accordion__icon::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 1px;
+        background: var(--color-white);
+    }
+    
+    .accordion__icon::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 1px;
+        height: 50%;
+        background: var(--color-white);
+    }
