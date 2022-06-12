@@ -1,0 +1,324 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul>li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+:root {
+    --text-white-color: #FFFFFF;
+    --text-size-medium: 1.6rem;
+}
+
+.container {
+    width: 130rem;
+    margin: 0 auto;
+}
+
+.button {
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    font-size: var(--text-size-medium);
+    color: #FFFFFF;
+}
+
+.block-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 10;
+    padding: 3rem 0;
+    display: none;
+    background: rgb(242 242 245 / 85%);
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.modal__inner.show {
+    visibility: visible;
+    padding: 20px 50px;
+}
+
+.modal__inner {
+    height: 100vh;
+    width: 55rem;
+    text-align: center;
+}
+
+.modal__header {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 140%;
+    color: var(--text-white-color);
+    margin-bottom: 1rem;
+}
+
+.modal__subheader {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 160%;
+    color: var(--text-white-color);
+    opacity: 0.5;
+    margin-bottom: 2.8rem;
+}
+
+.modal__input {
+    width: 100%;
+    height: 4.4rem;
+    background-color: grey;
+    border-radius: 5rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 160%;
+    color: var(--text-white-color);
+    opacity: 0.8;
+}
+
+.modal__input input {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.modal__input:not(:last-child) {
+    margin-bottom: 1.6rem;
+}
+
+.modal__elements {
+    width: 45rem;
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
+    flex-direction: column;
+}
+
+.modal__button {
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+
+.noscroll {
+    overflow: hidden !important;
+    height: 100% !important;
+}
+
+.modal__inner__container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-questions__item-header {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    height: 55px;
+    line-height: 19px;
+    padding: 28px 24px 28px 60px;
+    position: relative;
+}
+
+.modal-questions__item {
+    background: #53535e;
+    border-radius: 12px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.modal-questions__item.active .modal-questions__item-header {
+    background: #21212c;
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-questions__item>.active {
+    flex-direction: column;
+}
+
+.modal-questions__item-content {
+    align-items: center;
+    color: #bbc4d2;
+    display: block;
+    position: relative;
+    transition: all .3s;
+}
+
+.modal-questions__item-content p:before {
+    background: #32323e;
+    content: "";
+    height: 100%;
+    left: -10px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(-90deg);
+    transform: translateY(-50%);
+    width: 1px;
+    margin: 0 auto;
+}
+
+.modal-close {
+    font-size: 25px;
+    width: 25px;
+    cursor: pointer;
+    text-align: center;
+    color: rgb(50 50 62 / 80%);
+}
+
+.overlay.show {
+    visibility: visible;
+}
+
+.overlay {
+    background: rgba(21, 21, 31, .98);
+    height: 100%;
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    width: 100%;
+    z-index: 998;
+}
+
+
+/*сетка*/
+
+@media (max-width: 108em) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 105em) {
+    html {
+        font-size: 8.75px;
+    }
+}
+
+@media (max-width: 91.5em) {
+    html {
+        font-size: 7.9px;
+    }
+}
+
+@media (max-width: 91em) {
+    html {
+        font-size: 8.4px;
+    }
+}
+
+@media (max-width: 90em) {
+    html {
+        font-size: 7.9px;
+    }
+}
+
+@media (max-width: 80em) {
+    html {
+        font-size: 7.2px
+    }
+}
+
+@media (max-width: 72em) {
+    html {
+        font-size: 6.5px;
+    }
+}
+
+@media (max-width: 64em) {
+    html {
+        font-size: 5.5px;
+    }
+}
+
+@media (max-width: 48em) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 44em) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 38em) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 34em) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 30em) {
+    html {
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 26em) {
+    html {
+        font-size: 4.5px;
+    }
+}
+
+@media (max-width: 21em) {
+    html {
+        font-size: 4.4px;
+    }
+}
+
+
+/*сетка

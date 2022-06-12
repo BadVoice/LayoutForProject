@@ -6,6 +6,12 @@
 @import url('../css/payment.css');
 @import url('../css/footer.css');
 @import url('../css/calc.css');
+@import url('../css/nav.css');
+@import url('../css/modal.css');
+@import url('../css/nav.css');
+@import url('../css/accordion.css');
+@import url('../css/accordionStyle.css');
+@import url('../css/normalize.css');
 :root {
     --color-white: #fff;
     --color-black: #2D3436;
