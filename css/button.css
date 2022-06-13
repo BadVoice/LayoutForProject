@@ -1,4 +1,5 @@
 .wrapper__btn {
+    height: 64px;
     border-radius: 16px;
     font-size: 18px;
     font-family: var(--font-family-b-700);

@@ -1,9 +1,3 @@
-.wrpapper__container-flex {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
 .wrapper__nav {
     display: flex;
 }
