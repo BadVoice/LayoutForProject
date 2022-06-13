@@ -2,8 +2,9 @@ const modalFaq = document.querySelector('.forms_question__link')
 const modal = document.querySelector('.modal')
 const modalHide = document.querySelector('.modal__inner')
 
-modalFaq.addEventListener(('click'), () => {
+modalFaq.addEventListener(('click'), (event) => {
     modal.style.display = 'flex';
+    event.preventDefault();
 })
 
 
