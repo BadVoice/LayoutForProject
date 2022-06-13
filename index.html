@@ -61,10 +61,10 @@
                                     <form action=" " class="wrapper__forms__fields ">
                                         <div class="wrapper__forms__input ">
                                             <label class="wrapper__name__input__container ">
-                                            <input type="text " placeholder="Ваш логин " />
+                                            <input type="text " placeholder="Ваш логин " required />
                                             <div></div>             
                                     </label>
-                                            <label class="wrapper__email__input__container "> <input type="number " placeholder="Сумма"/>
+                                            <label class="wrapper__email__input__container "> <input type="number " value  placeholder="Сумма" min="100" max="1400" required/>
                                         <div></div>
                                     </label>
                                         </div>
@@ -94,7 +94,7 @@
                                             <div id="card" class="payment__container">
                                                 <div class="wrapper__payment-card">
                                                     <p>Карта</p>
-                                                    <input type="radio" name="method" id="1" class="hidebx" value="enot-card" required>
+                                                    <input type="radio" name="method" id="1" class="hidebx" value="enot-card" checked required>
                                                     <label for="1" class="lbl-radio">
                                             <div class="display-box">
                                                 <div><img src="./images/icons/card.png" alt="card">
@@ -104,14 +104,35 @@
                                                 </div>
                                             </div>
                                             <div id="card" class="payment__container">
+                                                <div class="payment-checked">
+
+                                                </div>
                                                 <div class="wrapper__payment-card">
                                                     <p>QIWI</p>
-                                                    <input type="radio" name="method" id="2" class="hidebx" value="enot-qiwi" required>
+                                                    <input type="radio" name="method" id="2" class="hidebx" value="enot-qiwi" checked required>
                                                     <label for="1" class="lbl-radio">
                                             <div class="display-box">
                                                 <div><img src="./images/icons/QIWI.png" alt="card">
                                                     
                                                 </div>
+                                            </div>
+                                            
+                                        </label>
+                                                </div>
+
+
+
+                                            </div>
+
+
+                                            <div id="card" class="payment__container">
+                                                <div class="wrapper__payment-card">
+                                                    <p>Карта</p>
+                                                    <input type="radio" name="method" id="1" class="hidebx" value="enot-card" checked required>
+                                                    <label for="1" class="lbl-radio">
+                                            <div class="display-box">
+                                                <div><img src="./images/icons/card.png" alt="card">
+                                                    </div>
                                             </div>
                                         </label>
                                                 </div>

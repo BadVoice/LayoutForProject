@@ -98,7 +98,7 @@
 }
 
 .wrapper__forms__title {
-    font-size: 35px;
+    font-size: 45px;
     color: var(--color-purple-dark);
     font-family: var(--font-family-b-700);
     letter-spacing: -0.5px;
@@ -167,8 +167,10 @@ footer>.container {
     outline: none;
     font-size: 18px;
     border: none;
+    font-family: var(--font-family-m);
     padding: 8px 16px;
     padding-right: 40px;
+    cursor: text;
 }
 
 .wrapper__forms__input input::placeholder {

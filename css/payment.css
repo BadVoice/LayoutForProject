@@ -1,19 +1,25 @@
 .wrapper__payment {
-    display: flex;
     height: 160px;
+    padding: 20px;
     /* background-color: var(--color-gray-24); */
     border-radius: 20px;
     background: radial-gradient(circle, rgba(155, 92, 231, 1) 0%, rgba(108, 92, 231, 1) 100%);
 }
 
 .wrapper__payment-grid {
-    display: flex;
+    display: grid;
+    height: 100%;
+    padding: 1;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
 }
 
 .payment__container {
     background-color: var(--color-white);
     border-radius: 20px;
     cursor: pointer;
+    padding: 10px;
 }
 
 .payment__container:hover {
@@ -32,6 +38,14 @@
     height: 100%;
     justify-content: center;
     flex-direction: column-reverse;
+}
+
+.payment-checked {
+    display: block;
+    width: 35px;
+    background: url('../images/icons/Acrylic-green.svg') no-repeat;
+    height: 35px;
+    position: absolute;
 }
 
 .wrapper__payment-card>p {
