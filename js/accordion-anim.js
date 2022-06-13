@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const content = self.querySelector('.accordion__content');
 
             self.classList.toggle('open');
-
+            e.preventDefault();
             // если открыт аккордеон
             if (self.classList.contains('open')) {
                 control.setAttribute('aria-expanded', true);
