@@ -51,6 +51,7 @@ body {
     margin: 0;
     padding: 0;
     background: #F5F6F7;
+    overflow: auto;
 }
 
 body * {
@@ -63,6 +64,6 @@ html {}
     --font-family-r: RobotoR, sans-serif;
 }
 
-.stop-scrolling {
-    height: 100%;
+::-webkit-scrollbar {
+    display: none;
 }

@@ -7,6 +7,7 @@ const modalHide = document.querySelector('.modal__inner')
 modalFaq.addEventListener(('click'), (event) => {
     modal.style.display = 'flex';
     document.body.style.overflow = "hidden";
+
     event.preventDefault();
 })
 
@@ -17,8 +18,9 @@ modal.addEventListener(('click'), (event) => {
 
     if (!modalContent) {
         modal.style.display = '';
-        document.body.style.overflow = "auto";
+
     }
+
 
 
 })
