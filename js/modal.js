@@ -17,7 +17,7 @@ modal.addEventListener(('click'), (event) => {
 
     if (!modalContent) {
         modal.style.display = '';
-        body.style.cssText = `overflow:  scroll;`
+        body.style.cssText = `overflow:  auto;`
     }
 
 
