@@ -1,12 +1,12 @@
 const modalFaq = document.querySelector('.forms_question__link')
 const modal = document.querySelector('.modal')
 const modalHide = document.querySelector('.modal__inner')
-const body = document.querySelector('body')
+
 
 
 modalFaq.addEventListener(('click'), (event) => {
     modal.style.display = 'flex';
-    body.style.cssText = `overflow: hidden;`
+    document.body.style.overflow = "hidden";
     event.preventDefault();
 })
 
@@ -17,7 +17,7 @@ modal.addEventListener(('click'), (event) => {
 
     if (!modalContent) {
         modal.style.display = '';
-        body.style.cssText = `overflow:  auto;`
+        document.body.style.overflow = "auto";
     }
 
 

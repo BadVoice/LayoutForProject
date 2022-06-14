@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 control.setAttribute('aria-expanded', true);
                 content.setAttribute('aria-hidden', false);
                 content.style.maxHeight = content.scrollHeight + 'px';
-
+                document.body.style.overflow = "hidden";
                 control.style.cssText = `
 				background-color: var(--color-purple-light);
 			

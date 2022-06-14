@@ -57,6 +57,12 @@ body * {
     box-sizing: border-box;
 }
 
+html {}
+
 :root {
     --font-family-r: RobotoR, sans-serif;
+}
+
+.stop-scrolling {
+    height: 100%;
 }
