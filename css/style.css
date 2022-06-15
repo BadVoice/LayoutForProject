@@ -64,6 +64,6 @@ html {}
     --font-family-r: RobotoR, sans-serif;
 }
 
-::-webkit-scrollbar {
+.modal::-webkit-scrollbar {
     display: none;
 }
